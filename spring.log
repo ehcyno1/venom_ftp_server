@@ -1,0 +1,526 @@
+2021-08-23 17:12:39.238  INFO 3236 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Starting ZappleFtpServerApplication using Java 16.0.1 on LAPTOP-7UMLR1OT with PID 3236 (C:\workspaces\GitHub\zapple_ftp_server\target\classes started by interfacer in C:\workspaces\GitHub\zapple_ftp_server)
+2021-08-23 17:12:39.242 DEBUG 3236 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-23 17:12:39.243  INFO 3236 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : No active profile set, falling back to default profiles: default
+2021-08-23 17:12:39.283  INFO 3236 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\interfacer\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+2021-08-23 17:12:39.284  INFO 3236 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-23 17:12:39.284  INFO 3236 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-23 17:12:40.261  INFO 3236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-23 17:12:40.272  INFO 3236 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-23 17:12:40.272  INFO 3236 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-23 17:12:40.341  INFO 3236 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-23 17:12:40.341  INFO 3236 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1057 ms
+2021-08-23 17:12:40.446  INFO 3236 --- [restartedMain] c.z.z.service.MyFtpServer                : [res/, application.properties] creation was successful
+2021-08-23 17:12:40.506  INFO 3236 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Starting...
+2021-08-23 17:12:40.573  INFO 3236 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Start completed.
+2021-08-23 17:12:40.614  INFO 3236 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=mediacan-res/, idletime=0, userid=mediacan, userpassword=*6FA2BF9D766BB45BDA8ABDF0078FBBFDA6E8019F}
+2021-08-23 17:12:40.614  INFO 3236 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=zapple-res/, idletime=0, userid=zapple, userpassword=*25845A3E67E79CCCD2CBFFEAC037548628958036}
+2021-08-23 17:12:40.621  INFO 3236 --- [restartedMain] c.z.z.service.MyFtpServer                : [] is initialized
+2021-08-23 17:12:40.699  INFO 3236 --- [restartedMain] o.a.ftpserver.impl.DefaultFtpServer      : FTP server started
+2021-08-23 17:12:40.700  INFO 3236 --- [restartedMain] c.z.z.service.MyFtpServer                : ftp started successfully, port number:21
+2021-08-23 17:12:40.996  INFO 3236 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-23 17:12:41.023  INFO 3236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-23 17:12:41.036  INFO 3236 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Started ZappleFtpServerApplication in 2.159 seconds (JVM running for 2.9)
+2021-08-23 17:12:57.372  INFO 3236 --- [NioProcessor-3] o.a.f.listener.nio.FtpLoggingFilter      : CREATED
+2021-08-23 17:12:57.375  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : OPENED
+2021-08-23 17:12:57.379  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 220 Service ready for new user.
+
+2021-08-23 17:13:06.223  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: USER admin
+2021-08-23 17:13:06.225  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 331 User name okay, need password for admin.
+
+2021-08-23 17:13:06.226  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PASS *****
+2021-08-23 17:13:06.237  INFO 3236 --- [pool-4-thread-1] org.apache.ftpserver.command.impl.PASS   : Login success - admin
+2021-08-23 17:13:06.238  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 230 User logged in, proceed.
+
+2021-08-23 17:13:06.238  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:13:06.239  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:13:06.243  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: CWD /
+2021-08-23 17:13:06.244  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 250 Directory changed to /
+
+2021-08-23 17:13:06.245  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:13:06.245  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:13:06.246  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: TYPE A
+2021-08-23 17:13:06.248  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 200 Command TYPE okay.
+
+2021-08-23 17:13:06.249  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: EPRT |2|::1|10110|
+2021-08-23 17:13:06.251  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 200 Command EPRT okay.
+
+2021-08-23 17:13:06.251  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: LIST
+2021-08-23 17:13:06.256  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 150 File status okay; about to open data connection.
+
+2021-08-23 17:13:06.256  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 226 Closing data connection.
+
+2021-08-23 17:13:28.634  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: DELE {DONGA}_{20210701_173902}.xml
+2021-08-23 17:13:28.635  INFO 3236 --- [pool-4-thread-1] org.apache.ftpserver.command.impl.DELE   : File delete : admin - /{DONGA}_{20210701_173902}.xml
+2021-08-23 17:13:28.635  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 250 Requested file action okay, deleted /{DONGA}_{20210701_173902}.xml.
+
+2021-08-23 17:13:28.645  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: CWD /
+2021-08-23 17:13:28.646  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 250 Directory changed to /
+
+2021-08-23 17:13:28.649  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:13:28.649  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:13:28.651  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: TYPE A
+2021-08-23 17:13:28.651  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 200 Command TYPE okay.
+
+2021-08-23 17:13:28.653  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: EPRT |2|::1|10112|
+2021-08-23 17:13:28.653  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 200 Command EPRT okay.
+
+2021-08-23 17:13:28.656  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: LIST
+2021-08-23 17:13:28.657  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 150 File status okay; about to open data connection.
+
+2021-08-23 17:13:28.658  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 226 Closing data connection.
+
+2021-08-23 17:13:42.051  INFO 3236 --- [NioProcessor-4] o.a.f.listener.nio.FtpLoggingFilter      : CREATED
+2021-08-23 17:13:42.051  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : OPENED
+2021-08-23 17:13:42.052  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 220 Service ready for new user.
+
+2021-08-23 17:13:42.055  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: USER admin
+2021-08-23 17:13:42.056  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 331 User name okay, need password for admin.
+
+2021-08-23 17:13:42.056  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PASS *****
+2021-08-23 17:13:42.057  INFO 3236 --- [pool-4-thread-2] org.apache.ftpserver.command.impl.PASS   : Login success - admin
+2021-08-23 17:13:42.057  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 230 User logged in, proceed.
+
+2021-08-23 17:13:42.057  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:13:42.058  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:13:42.059  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: CWD /
+2021-08-23 17:13:42.059  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 250 Directory changed to /
+
+2021-08-23 17:13:42.060  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:13:42.060  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:13:42.079  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: TYPE I
+2021-08-23 17:13:42.080  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 200 Command TYPE okay.
+
+2021-08-23 17:13:42.081  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: EPRT |2|::1|10121|
+2021-08-23 17:13:42.082  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 200 Command EPRT okay.
+
+2021-08-23 17:13:42.082  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: STOR {DONGA}_{20210701_173902}.xml
+2021-08-23 17:13:42.082  INFO 3236 --- [pool-4-thread-1] c.z.zapple_ftp_server.service.MyFtplet   : USER:'admin'，Upload files to the directory：'res/'，The file name is：'{DONGA}_{20210701_173902}.xml'，Status: uploading started
+2021-08-23 17:13:42.084  INFO 3236 --- [pool-4-thread-1] org.apache.ftpserver.command.impl.STOR   : File uploaded /{DONGA}_{20210701_173902}.xml
+2021-08-23 17:13:42.088  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: CWD /
+2021-08-23 17:13:42.089  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 250 Directory changed to /
+
+2021-08-23 17:13:42.090  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:13:42.090  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:13:42.092  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: TYPE A
+2021-08-23 17:13:42.093  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 200 Command TYPE okay.
+
+2021-08-23 17:13:42.094  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: EPRT |2|::1|10123|
+2021-08-23 17:13:42.095  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 200 Command EPRT okay.
+
+2021-08-23 17:13:42.097  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: LIST
+2021-08-23 17:13:42.099  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 150 File status okay; about to open data connection.
+
+2021-08-23 17:13:42.099  INFO 3236 --- [pool-4-thread-2] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 226 Closing data connection.
+
+2021-08-23 17:13:42.323  INFO 3236 --- [pool-4-thread-1] c.z.zapple_ftp_server.service.MyFtplet   : EPGData.CHName : DONGA
+2021-08-23 17:13:42.323  INFO 3236 --- [pool-4-thread-1] c.z.zapple_ftp_server.service.MyFtplet   : USER:'admin'，Upload files to the directory：'res/'，The file name is：'{DONGA}_{20210701_173902}.xml'，Status: Status: Success!
+2021-08-23 17:13:42.323  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 150 File status okay; about to open data connection.
+
+2021-08-23 17:13:42.323  INFO 3236 --- [pool-4-thread-1] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 226 Transfer complete.
+
+2021-08-23 17:14:42.112  INFO 3236 --- [pool-4-thread-4] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:14:42.114  INFO 3236 --- [pool-4-thread-4] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:15:42.125  INFO 3236 --- [pool-4-thread-5] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:15:42.127  INFO 3236 --- [pool-4-thread-5] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:16:42.119  INFO 3236 --- [pool-4-thread-6] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:16:42.120  INFO 3236 --- [pool-4-thread-6] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:17:42.120  INFO 3236 --- [pool-4-thread-7] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:17:42.122  INFO 3236 --- [pool-4-thread-7] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:18:42.119  INFO 3236 --- [pool-4-thread-8] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:18:42.121  INFO 3236 --- [pool-4-thread-8] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:18:43.110  INFO 3236 --- [pool-4-thread-8] o.a.f.listener.nio.FtpLoggingFilter      : IDLE
+2021-08-23 17:18:43.110  INFO 3236 --- [pool-4-thread-8] o.a.ftpserver.impl.DefaultFtpHandler     : Session idle, closing
+2021-08-23 17:18:43.111  INFO 3236 --- [pool-4-thread-8] o.a.f.listener.nio.FtpLoggingFilter      : CLOSED
+2021-08-23 17:19:42.132  INFO 3236 --- [pool-4-thread-10] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:19:42.136  INFO 3236 --- [pool-4-thread-10] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:20:42.131  INFO 3236 --- [pool-4-thread-11] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:20:42.133  INFO 3236 --- [pool-4-thread-11] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:21:42.143  INFO 3236 --- [pool-4-thread-12] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:21:42.145  INFO 3236 --- [pool-4-thread-12] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:22:42.140  INFO 3236 --- [pool-4-thread-13] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:22:42.143  INFO 3236 --- [pool-4-thread-13] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:23:42.134  INFO 3236 --- [pool-4-thread-14] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:23:42.137  INFO 3236 --- [pool-4-thread-14] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:24:42.159  INFO 3236 --- [pool-4-thread-15] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:24:42.161  INFO 3236 --- [pool-4-thread-15] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:25:42.151  INFO 3236 --- [pool-4-thread-16] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:25:42.152  INFO 3236 --- [pool-4-thread-16] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:26:42.146  INFO 3236 --- [pool-4-thread-17] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:26:42.149  INFO 3236 --- [pool-4-thread-17] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:27:42.159  INFO 3236 --- [pool-4-thread-18] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:27:42.160  INFO 3236 --- [pool-4-thread-18] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:28:42.178  INFO 3236 --- [pool-4-thread-19] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:28:42.180  INFO 3236 --- [pool-4-thread-19] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:29:42.184  INFO 3236 --- [pool-4-thread-20] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:29:42.186  INFO 3236 --- [pool-4-thread-20] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:30:42.188  INFO 3236 --- [pool-4-thread-21] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:30:42.190  INFO 3236 --- [pool-4-thread-21] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:31:42.180  INFO 3236 --- [pool-4-thread-22] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:31:42.181  INFO 3236 --- [pool-4-thread-22] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:32:42.204  INFO 3236 --- [pool-4-thread-23] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:32:42.206  INFO 3236 --- [pool-4-thread-23] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:33:42.203  INFO 3236 --- [pool-4-thread-24] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:33:42.204  INFO 3236 --- [pool-4-thread-24] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:34:42.206  INFO 3236 --- [pool-4-thread-25] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:34:42.207  INFO 3236 --- [pool-4-thread-25] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:35:42.190  INFO 3236 --- [pool-4-thread-26] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:35:42.191  INFO 3236 --- [pool-4-thread-26] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:36:42.196  INFO 3236 --- [pool-4-thread-27] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:36:42.197  INFO 3236 --- [pool-4-thread-27] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:37:42.202  INFO 3236 --- [pool-4-thread-28] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:37:42.204  INFO 3236 --- [pool-4-thread-28] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:38:42.196  INFO 3236 --- [pool-4-thread-29] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:38:42.199  INFO 3236 --- [pool-4-thread-29] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:39:42.198  INFO 3236 --- [pool-4-thread-30] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:39:42.200  INFO 3236 --- [pool-4-thread-30] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:40:42.195  INFO 3236 --- [pool-4-thread-31] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:40:42.197  INFO 3236 --- [pool-4-thread-31] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:41:42.196  INFO 3236 --- [pool-4-thread-32] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:41:42.198  INFO 3236 --- [pool-4-thread-32] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:42:42.204  INFO 3236 --- [pool-4-thread-33] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:42:42.207  INFO 3236 --- [pool-4-thread-33] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:43:42.192  INFO 3236 --- [pool-4-thread-34] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:43:42.195  INFO 3236 --- [pool-4-thread-34] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:44:42.195  INFO 3236 --- [pool-4-thread-35] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:44:42.198  INFO 3236 --- [pool-4-thread-35] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:45:42.205  INFO 3236 --- [pool-4-thread-36] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:45:42.209  INFO 3236 --- [pool-4-thread-36] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:46:42.193  INFO 3236 --- [pool-4-thread-37] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:46:42.195  INFO 3236 --- [pool-4-thread-37] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:47:42.193  INFO 3236 --- [pool-4-thread-38] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:47:42.194  INFO 3236 --- [pool-4-thread-38] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:48:42.203  INFO 3236 --- [pool-4-thread-39] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:48:42.203  INFO 3236 --- [pool-4-thread-39] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:49:42.203  INFO 3236 --- [pool-4-thread-40] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:49:42.205  INFO 3236 --- [pool-4-thread-40] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:50:42.201  INFO 3236 --- [pool-4-thread-41] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:50:42.202  INFO 3236 --- [pool-4-thread-41] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:51:42.195  INFO 3236 --- [pool-4-thread-42] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:51:42.196  INFO 3236 --- [pool-4-thread-42] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:52:42.197  INFO 3236 --- [pool-4-thread-43] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:52:42.199  INFO 3236 --- [pool-4-thread-43] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:53:42.198  INFO 3236 --- [pool-4-thread-44] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:53:42.198  INFO 3236 --- [pool-4-thread-44] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:54:42.201  INFO 3236 --- [pool-4-thread-45] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:54:42.202  INFO 3236 --- [pool-4-thread-45] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:55:42.205  INFO 3236 --- [pool-4-thread-46] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:55:42.207  INFO 3236 --- [pool-4-thread-46] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 17:56:42.203  INFO 3236 --- [pool-4-thread-47] o.a.f.listener.nio.FtpLoggingFilter      : RECEIVED: PWD
+2021-08-23 17:56:42.205  INFO 3236 --- [pool-4-thread-47] o.a.f.listener.nio.FtpLoggingFilter      : SENT: 257 "/" is current directory.
+
+2021-08-23 18:04:48.467  INFO 3236 --- [pool-4-thread-48] o.a.f.listener.nio.FtpLoggingFilter      : IDLE
+2021-08-23 18:04:48.470  INFO 3236 --- [pool-4-thread-48] o.a.ftpserver.impl.DefaultFtpHandler     : Session idle, closing
+2021-08-23 18:04:48.472  INFO 3236 --- [pool-4-thread-48] o.a.f.listener.nio.FtpLoggingFilter      : CLOSED
+2021-08-23 18:05:04.596  WARN 3236 --- [pool-venom housekeeper] com.zaxxer.hikari.pool.HikariPool        : pool-venom - Thread starvation or clock leap detected (housekeeper delta=7m53s175ms237µs800ns).
+2021-08-23 18:08:35.418  INFO 3236 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : pool-venom - Shutdown initiated...
+2021-08-23 18:08:35.421  INFO 3236 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : pool-venom - Shutdown completed.
+2021-08-23 18:08:38.537  INFO 13384 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Starting ZappleFtpServerApplication using Java 16.0.1 on LAPTOP-7UMLR1OT with PID 13384 (C:\workspaces\GitHub\zapple_ftp_server\target\classes started by interfacer in C:\workspaces\GitHub\zapple_ftp_server)
+2021-08-23 18:08:38.539 DEBUG 13384 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-23 18:08:38.539  INFO 13384 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : No active profile set, falling back to default profiles: default
+2021-08-23 18:08:38.580  INFO 13384 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\interfacer\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+2021-08-23 18:08:38.580  INFO 13384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-23 18:08:38.580  INFO 13384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-23 18:08:39.488  INFO 13384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-23 18:08:39.498  INFO 13384 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-23 18:08:39.499  INFO 13384 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-23 18:08:39.555  INFO 13384 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-23 18:08:39.556  INFO 13384 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 976 ms
+2021-08-23 18:08:39.657  INFO 13384 --- [restartedMain] c.z.z.service.MyFtpServer                : [res/, application.properties] creation was successful
+2021-08-23 18:08:39.712  INFO 13384 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Starting...
+2021-08-23 18:08:39.762  INFO 13384 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Start completed.
+2021-08-23 18:08:39.767  INFO 13384 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=mediacan-res/, idletime=0, userid=mediacan, userpassword=*6FA2BF9D766BB45BDA8ABDF0078FBBFDA6E8019F}
+2021-08-23 18:08:39.767  INFO 13384 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=zapple-res/, idletime=0, userid=zapple, userpassword=*25845A3E67E79CCCD2CBFFEAC037548628958036}
+2021-08-23 18:08:39.775  INFO 13384 --- [restartedMain] c.z.z.service.MyFtpServer                : [] is initialized
+2021-08-23 18:08:39.838  INFO 13384 --- [restartedMain] o.a.ftpserver.impl.DefaultFtpServer      : FTP server started
+2021-08-23 18:08:39.838  INFO 13384 --- [restartedMain] c.z.z.service.MyFtpServer                : ftp started successfully, port number:21
+2021-08-23 18:08:40.124  INFO 13384 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-23 18:08:40.144  INFO 13384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-23 18:08:40.152  INFO 13384 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Started ZappleFtpServerApplication in 1.966 seconds (JVM running for 2.565)
+2021-08-23 18:11:11.072  INFO 13384 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : pool-venom - Shutdown initiated...
+2021-08-23 18:11:11.076  INFO 13384 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : pool-venom - Shutdown completed.
+2021-08-23 22:52:44.919  INFO 5116 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Starting ZappleFtpServerApplication using Java 16.0.1 on LAPTOP-7UMLR1OT with PID 5116 (C:\workspaces\GitHub\zapple_ftp_server\target\classes started by interfacer in C:\workspaces\GitHub\zapple_ftp_server)
+2021-08-23 22:52:44.927 DEBUG 5116 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-23 22:52:44.927  INFO 5116 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : No active profile set, falling back to default profiles: default
+2021-08-23 22:52:44.989  INFO 5116 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\interfacer\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+2021-08-23 22:52:44.989  INFO 5116 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-23 22:52:44.989  INFO 5116 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-23 22:52:46.586  INFO 5116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-23 22:52:46.602  INFO 5116 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-23 22:52:46.602  INFO 5116 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-23 22:52:46.702  INFO 5116 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-23 22:52:46.702  INFO 5116 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1713 ms
+2021-08-23 22:52:46.909  INFO 5116 --- [restartedMain] c.z.z.service.MyFtpServer                : [res/, application.properties] creation was successful
+2021-08-23 22:52:47.020  INFO 5116 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Starting...
+2021-08-23 22:52:47.101  INFO 5116 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Start completed.
+2021-08-23 22:52:47.151  INFO 5116 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=mediacan-res/, idletime=0, userid=mediacan, userpassword=*6FA2BF9D766BB45BDA8ABDF0078FBBFDA6E8019F}
+2021-08-23 22:52:47.151  INFO 5116 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=zapple-res/, idletime=0, userid=zapple, userpassword=*25845A3E67E79CCCD2CBFFEAC037548628958036}
+2021-08-23 22:52:47.159  INFO 5116 --- [restartedMain] c.z.z.service.MyFtpServer                : [] is initialized
+2021-08-23 22:52:47.272  INFO 5116 --- [restartedMain] o.a.ftpserver.impl.DefaultFtpServer      : FTP server started
+2021-08-23 22:52:47.272  INFO 5116 --- [restartedMain] c.z.z.service.MyFtpServer                : ftp started successfully, port number:21
+2021-08-23 22:52:47.734  INFO 5116 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-23 22:52:47.765  INFO 5116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-23 22:52:47.785  INFO 5116 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Started ZappleFtpServerApplication in 3.808 seconds (JVM running for 5.292)
+2021-08-23 22:58:17.702  INFO 5116 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : pool-venom - Shutdown initiated...
+2021-08-23 22:58:17.702  INFO 5116 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : pool-venom - Shutdown completed.
+2021-08-23 22:58:22.271  INFO 1816 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Starting ZappleFtpServerApplication using Java 16.0.1 on LAPTOP-7UMLR1OT with PID 1816 (C:\workspaces\GitHub\zapple_ftp_server\target\classes started by interfacer in C:\workspaces\GitHub\zapple_ftp_server)
+2021-08-23 22:58:22.271 DEBUG 1816 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-23 22:58:22.271  INFO 1816 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : No active profile set, falling back to default profiles: default
+2021-08-23 22:58:22.320  INFO 1816 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\interfacer\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+2021-08-23 22:58:22.320  INFO 1816 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-23 22:58:22.320  INFO 1816 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-23 22:58:23.455  INFO 1816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-23 22:58:23.460  INFO 1816 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-23 22:58:23.460  INFO 1816 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-23 22:58:23.523  INFO 1816 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-23 22:58:23.523  INFO 1816 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1203 ms
+2021-08-23 22:58:23.648  INFO 1816 --- [restartedMain] c.z.z.service.MyFtpServer                : [res/, application.properties] creation was successful
+2021-08-23 22:58:23.727  INFO 1816 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Starting...
+2021-08-23 22:58:23.790  INFO 1816 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Start completed.
+2021-08-23 22:58:23.790  INFO 1816 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=mediacan-res/, idletime=0, userid=mediacan, userpassword=*6FA2BF9D766BB45BDA8ABDF0078FBBFDA6E8019F}
+2021-08-23 22:58:23.790  INFO 1816 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=zapple-res/, idletime=0, userid=zapple, userpassword=*25845A3E67E79CCCD2CBFFEAC037548628958036}
+2021-08-23 22:58:23.805  INFO 1816 --- [restartedMain] c.z.z.service.MyFtpServer                : [] is initialized
+2021-08-23 22:58:23.876  INFO 1816 --- [restartedMain] o.a.ftpserver.impl.DefaultFtpServer      : FTP server started
+2021-08-23 22:58:23.876  INFO 1816 --- [restartedMain] c.z.z.service.MyFtpServer                : ftp started successfully, port number:21
+2021-08-23 22:58:24.208  INFO 1816 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-23 22:58:24.223  INFO 1816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-23 22:58:24.239  INFO 1816 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Started ZappleFtpServerApplication in 2.259 seconds (JVM running for 2.824)
+2021-08-23 23:38:04.091  INFO 1816 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : pool-venom - Shutdown initiated...
+2021-08-23 23:38:04.091  INFO 1816 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : pool-venom - Shutdown completed.
+2021-08-23 23:38:06.218  INFO 2332 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Starting ZappleFtpServerApplication using Java 16.0.1 on LAPTOP-7UMLR1OT with PID 2332 (C:\workspaces\GitHub\zapple_ftp_server\target\classes started by interfacer in C:\workspaces\GitHub\zapple_ftp_server)
+2021-08-23 23:38:06.220 DEBUG 2332 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-23 23:38:06.220  INFO 2332 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : No active profile set, falling back to default profiles: default
+2021-08-23 23:38:06.250  INFO 2332 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\interfacer\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+2021-08-23 23:38:06.250  INFO 2332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-23 23:38:06.250  INFO 2332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-23 23:38:07.016  INFO 2332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-23 23:38:07.031  INFO 2332 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-23 23:38:07.031  INFO 2332 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-23 23:38:07.078  INFO 2332 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-23 23:38:07.078  INFO 2332 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 827 ms
+2021-08-23 23:38:07.172  INFO 2332 --- [restartedMain] c.z.z.service.MyFtpServer                : [res/, application.properties] creation was successful
+2021-08-23 23:38:07.220  INFO 2332 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Starting...
+2021-08-23 23:38:07.267  INFO 2332 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Start completed.
+2021-08-23 23:38:07.267  INFO 2332 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=mediacan-res/, idletime=0, userid=mediacan, userpassword=*6FA2BF9D766BB45BDA8ABDF0078FBBFDA6E8019F}
+2021-08-23 23:38:07.283  INFO 2332 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=zapple-res/, idletime=0, userid=zapple, userpassword=*25845A3E67E79CCCD2CBFFEAC037548628958036}
+2021-08-23 23:38:07.283  INFO 2332 --- [restartedMain] c.z.z.service.MyFtpServer                : [] is initialized
+2021-08-23 23:38:07.350  INFO 2332 --- [restartedMain] o.a.ftpserver.impl.DefaultFtpServer      : FTP server started
+2021-08-23 23:38:07.350  INFO 2332 --- [restartedMain] c.z.z.service.MyFtpServer                : ftp started successfully, port number:21
+2021-08-23 23:38:07.586  INFO 2332 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-23 23:38:07.601  INFO 2332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-23 23:38:07.617  INFO 2332 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Started ZappleFtpServerApplication in 1.718 seconds (JVM running for 2.276)
+2021-08-23 23:39:50.235  INFO 2332 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : pool-venom - Shutdown initiated...
+2021-08-23 23:39:50.235  INFO 2332 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : pool-venom - Shutdown completed.
+2021-08-23 23:39:52.553  INFO 3232 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Starting ZappleFtpServerApplication using Java 16.0.1 on LAPTOP-7UMLR1OT with PID 3232 (C:\workspaces\GitHub\zapple_ftp_server\target\classes started by interfacer in C:\workspaces\GitHub\zapple_ftp_server)
+2021-08-23 23:39:52.553 DEBUG 3232 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-23 23:39:52.553  INFO 3232 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : No active profile set, falling back to default profiles: default
+2021-08-23 23:39:52.600  INFO 3232 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\interfacer\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+2021-08-23 23:39:52.600  INFO 3232 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-23 23:39:52.600  INFO 3232 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-23 23:39:53.402  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-23 23:39:53.402  INFO 3232 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-23 23:39:53.402  INFO 3232 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-23 23:39:53.465  INFO 3232 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-23 23:39:53.465  INFO 3232 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 865 ms
+2021-08-23 23:39:53.544  INFO 3232 --- [restartedMain] c.z.z.service.MyFtpServer                : [res/, application.properties] creation was successful
+2021-08-23 23:39:53.591  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Starting...
+2021-08-23 23:39:53.638  INFO 3232 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Start completed.
+2021-08-23 23:39:53.638  INFO 3232 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=mediacan-res/, idletime=0, userid=mediacan, userpassword=*6FA2BF9D766BB45BDA8ABDF0078FBBFDA6E8019F}
+2021-08-23 23:39:53.638  INFO 3232 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=zapple-res/, idletime=0, userid=zapple, userpassword=*25845A3E67E79CCCD2CBFFEAC037548628958036}
+2021-08-23 23:39:53.653  INFO 3232 --- [restartedMain] c.z.z.service.MyFtpServer                : [] is initialized
+2021-08-23 23:39:53.711  INFO 3232 --- [restartedMain] o.a.ftpserver.impl.DefaultFtpServer      : FTP server started
+2021-08-23 23:39:53.711  INFO 3232 --- [restartedMain] c.z.z.service.MyFtpServer                : ftp started successfully, port number:21
+2021-08-23 23:39:53.964  INFO 3232 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-23 23:39:53.985  INFO 3232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-23 23:39:53.994  INFO 3232 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Started ZappleFtpServerApplication in 1.786 seconds (JVM running for 2.366)
+2021-08-23 23:40:56.896  INFO 3232 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : pool-venom - Shutdown initiated...
+2021-08-23 23:40:56.900  INFO 3232 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : pool-venom - Shutdown completed.
+2021-08-23 23:40:58.889  INFO 6876 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Starting ZappleFtpServerApplication using Java 16.0.1 on LAPTOP-7UMLR1OT with PID 6876 (C:\workspaces\GitHub\zapple_ftp_server\target\classes started by interfacer in C:\workspaces\GitHub\zapple_ftp_server)
+2021-08-23 23:40:58.889 DEBUG 6876 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-23 23:40:58.889  INFO 6876 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : No active profile set, falling back to default profiles: default
+2021-08-23 23:40:58.918  INFO 6876 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\interfacer\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+2021-08-23 23:40:58.918  INFO 6876 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-23 23:40:58.918  INFO 6876 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-23 23:40:59.688  INFO 6876 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-23 23:40:59.688  INFO 6876 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-23 23:40:59.688  INFO 6876 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-23 23:40:59.735  INFO 6876 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-23 23:40:59.735  INFO 6876 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 817 ms
+2021-08-23 23:40:59.838  INFO 6876 --- [restartedMain] c.z.z.service.MyFtpServer                : [res/, application.properties] creation was successful
+2021-08-23 23:40:59.887  INFO 6876 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Starting...
+2021-08-23 23:40:59.928  INFO 6876 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Start completed.
+2021-08-23 23:40:59.932  INFO 6876 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=mediacan-res/, idletime=0, userid=mediacan, userpassword=*6FA2BF9D766BB45BDA8ABDF0078FBBFDA6E8019F}
+2021-08-23 23:40:59.932  INFO 6876 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=zapple-res/, idletime=0, userid=zapple, userpassword=*25845A3E67E79CCCD2CBFFEAC037548628958036}
+2021-08-23 23:40:59.937  INFO 6876 --- [restartedMain] c.z.z.service.MyFtpServer                : [] is initialized
+2021-08-23 23:40:59.995  INFO 6876 --- [restartedMain] o.a.ftpserver.impl.DefaultFtpServer      : FTP server started
+2021-08-23 23:40:59.996  INFO 6876 --- [restartedMain] c.z.z.service.MyFtpServer                : ftp started successfully, port number:21
+2021-08-23 23:41:00.247  INFO 6876 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-23 23:41:00.266  INFO 6876 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-23 23:41:00.277  INFO 6876 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Started ZappleFtpServerApplication in 1.701 seconds (JVM running for 2.244)
+2021-08-23 23:41:13.213  INFO 6876 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : pool-venom - Shutdown initiated...
+2021-08-23 23:41:13.213  INFO 6876 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : pool-venom - Shutdown completed.
+2021-08-23 23:41:15.265  INFO 5096 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Starting ZappleFtpServerApplication using Java 16.0.1 on LAPTOP-7UMLR1OT with PID 5096 (C:\workspaces\GitHub\zapple_ftp_server\target\classes started by interfacer in C:\workspaces\GitHub\zapple_ftp_server)
+2021-08-23 23:41:15.267 DEBUG 5096 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-23 23:41:15.267  INFO 5096 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : No active profile set, falling back to default profiles: default
+2021-08-23 23:41:15.302  INFO 5096 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\interfacer\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+2021-08-23 23:41:15.302  INFO 5096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-23 23:41:15.302  INFO 5096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-23 23:41:16.102  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-23 23:41:16.102  INFO 5096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-23 23:41:16.102  INFO 5096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-23 23:41:16.164  INFO 5096 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-23 23:41:16.164  INFO 5096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 862 ms
+2021-08-23 23:41:16.258  INFO 5096 --- [restartedMain] c.z.z.service.MyFtpServer                : [res/, application.properties] creation was successful
+2021-08-23 23:41:16.305  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Starting...
+2021-08-23 23:41:16.352  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Start completed.
+2021-08-23 23:41:16.352  INFO 5096 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=mediacan-res/, idletime=0, userid=mediacan, userpassword=*6FA2BF9D766BB45BDA8ABDF0078FBBFDA6E8019F}
+2021-08-23 23:41:16.352  INFO 5096 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=zapple-res/, idletime=0, userid=zapple, userpassword=*25845A3E67E79CCCD2CBFFEAC037548628958036}
+2021-08-23 23:41:16.352  INFO 5096 --- [restartedMain] c.z.z.service.MyFtpServer                : [] is initialized
+2021-08-23 23:41:16.414  INFO 5096 --- [restartedMain] o.a.ftpserver.impl.DefaultFtpServer      : FTP server started
+2021-08-23 23:41:16.414  INFO 5096 --- [restartedMain] c.z.z.service.MyFtpServer                : ftp started successfully, port number:21
+2021-08-23 23:41:16.671  INFO 5096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-23 23:41:16.702  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-23 23:41:16.702  INFO 5096 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Started ZappleFtpServerApplication in 1.787 seconds (JVM running for 2.341)
+2021-08-23 23:41:29.248  INFO 5096 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : pool-venom - Shutdown initiated...
+2021-08-23 23:41:29.248  INFO 5096 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : pool-venom - Shutdown completed.
+2021-08-23 23:41:31.356  INFO 2016 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Starting ZappleFtpServerApplication using Java 16.0.1 on LAPTOP-7UMLR1OT with PID 2016 (C:\workspaces\GitHub\zapple_ftp_server\target\classes started by interfacer in C:\workspaces\GitHub\zapple_ftp_server)
+2021-08-23 23:41:31.356 DEBUG 2016 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-23 23:41:31.356  INFO 2016 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : No active profile set, falling back to default profiles: default
+2021-08-23 23:41:31.382  INFO 2016 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\interfacer\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+2021-08-23 23:41:31.382  INFO 2016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-23 23:41:31.382  INFO 2016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-23 23:41:32.146  INFO 2016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-23 23:41:32.146  INFO 2016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-23 23:41:32.146  INFO 2016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-23 23:41:32.209  INFO 2016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-23 23:41:32.209  INFO 2016 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 827 ms
+2021-08-23 23:41:32.302  INFO 2016 --- [restartedMain] c.z.z.service.MyFtpServer                : [res/, application.properties] creation was successful
+2021-08-23 23:41:32.349  INFO 2016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Starting...
+2021-08-23 23:41:32.396  INFO 2016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Start completed.
+2021-08-23 23:41:32.396  INFO 2016 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=mediacan-res/, idletime=0, userid=mediacan, userpassword=*6FA2BF9D766BB45BDA8ABDF0078FBBFDA6E8019F}
+2021-08-23 23:41:32.396  INFO 2016 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=zapple-res/, idletime=0, userid=zapple, userpassword=*25845A3E67E79CCCD2CBFFEAC037548628958036}
+2021-08-23 23:41:32.412  INFO 2016 --- [restartedMain] c.z.z.service.MyFtpServer                : [] is initialized
+2021-08-23 23:41:32.474  INFO 2016 --- [restartedMain] o.a.ftpserver.impl.DefaultFtpServer      : FTP server started
+2021-08-23 23:41:32.474  INFO 2016 --- [restartedMain] c.z.z.service.MyFtpServer                : ftp started successfully, port number:21
+2021-08-23 23:41:32.755  INFO 2016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-23 23:41:32.771  INFO 2016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-23 23:41:32.787  INFO 2016 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Started ZappleFtpServerApplication in 1.743 seconds (JVM running for 2.337)
+2021-08-23 23:41:44.769  INFO 2016 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : pool-venom - Shutdown initiated...
+2021-08-23 23:41:44.778  INFO 2016 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : pool-venom - Shutdown completed.
+2021-08-23 23:41:46.757  INFO 5136 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Starting ZappleFtpServerApplication using Java 16.0.1 on LAPTOP-7UMLR1OT with PID 5136 (C:\workspaces\GitHub\zapple_ftp_server\target\classes started by interfacer in C:\workspaces\GitHub\zapple_ftp_server)
+2021-08-23 23:41:46.757 DEBUG 5136 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-23 23:41:46.757  INFO 5136 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : No active profile set, falling back to default profiles: default
+2021-08-23 23:41:46.786  INFO 5136 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\interfacer\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+2021-08-23 23:41:46.786  INFO 5136 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-23 23:41:46.786  INFO 5136 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-23 23:41:47.573  INFO 5136 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-23 23:41:47.573  INFO 5136 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-23 23:41:47.573  INFO 5136 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-23 23:41:47.637  INFO 5136 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-23 23:41:47.637  INFO 5136 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 851 ms
+2021-08-23 23:41:47.731  INFO 5136 --- [restartedMain] c.z.z.service.MyFtpServer                : [res/, application.properties] creation was successful
+2021-08-23 23:41:47.762  INFO 5136 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Starting...
+2021-08-23 23:41:47.809  INFO 5136 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Start completed.
+2021-08-23 23:41:47.809  INFO 5136 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=mediacan-res/, idletime=0, userid=mediacan, userpassword=*6FA2BF9D766BB45BDA8ABDF0078FBBFDA6E8019F}
+2021-08-23 23:41:47.809  INFO 5136 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=zapple-res/, idletime=0, userid=zapple, userpassword=*25845A3E67E79CCCD2CBFFEAC037548628958036}
+2021-08-23 23:41:47.829  INFO 5136 --- [restartedMain] c.z.z.service.MyFtpServer                : [] is initialized
+2021-08-23 23:41:47.892  INFO 5136 --- [restartedMain] o.a.ftpserver.impl.DefaultFtpServer      : FTP server started
+2021-08-23 23:41:47.892  INFO 5136 --- [restartedMain] c.z.z.service.MyFtpServer                : ftp started successfully, port number:21
+2021-08-23 23:41:48.143  INFO 5136 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-23 23:41:48.164  INFO 5136 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-23 23:41:48.172  INFO 5136 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Started ZappleFtpServerApplication in 1.735 seconds (JVM running for 2.249)
+2021-08-23 23:42:55.316  INFO 5136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : pool-venom - Shutdown initiated...
+2021-08-23 23:42:55.316  INFO 5136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : pool-venom - Shutdown completed.
+2021-08-23 23:42:57.412  INFO 1576 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Starting ZappleFtpServerApplication using Java 16.0.1 on LAPTOP-7UMLR1OT with PID 1576 (C:\workspaces\GitHub\zapple_ftp_server\target\classes started by interfacer in C:\workspaces\GitHub\zapple_ftp_server)
+2021-08-23 23:42:57.414 DEBUG 1576 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-23 23:42:57.414  INFO 1576 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : No active profile set, falling back to default profiles: default
+2021-08-23 23:42:57.436  INFO 1576 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\interfacer\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+2021-08-23 23:42:57.436  INFO 1576 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-23 23:42:57.436  INFO 1576 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-23 23:42:58.218  INFO 1576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-23 23:42:58.233  INFO 1576 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-23 23:42:58.233  INFO 1576 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-23 23:42:58.280  INFO 1576 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-23 23:42:58.280  INFO 1576 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 844 ms
+2021-08-23 23:42:58.374  INFO 1576 --- [restartedMain] c.z.z.service.MyFtpServer                : [res/, application.properties] creation was successful
+2021-08-23 23:42:58.421  INFO 1576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Starting...
+2021-08-23 23:42:58.468  INFO 1576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Start completed.
+2021-08-23 23:42:58.468  INFO 1576 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=mediacan-res/, idletime=0, userid=mediacan, userpassword=*6FA2BF9D766BB45BDA8ABDF0078FBBFDA6E8019F}
+2021-08-23 23:42:58.468  INFO 1576 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=zapple-res/, idletime=0, userid=zapple, userpassword=*25845A3E67E79CCCD2CBFFEAC037548628958036}
+2021-08-23 23:42:58.483  INFO 1576 --- [restartedMain] c.z.z.service.MyFtpServer                : [] is initialized
+2021-08-23 23:42:58.541  INFO 1576 --- [restartedMain] o.a.ftpserver.impl.DefaultFtpServer      : FTP server started
+2021-08-23 23:42:58.541  INFO 1576 --- [restartedMain] c.z.z.service.MyFtpServer                : ftp started successfully, port number:21
+2021-08-23 23:42:58.785  INFO 1576 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-23 23:42:58.816  INFO 1576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-23 23:42:58.816  INFO 1576 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Started ZappleFtpServerApplication in 1.742 seconds (JVM running for 2.267)
+2021-08-23 23:55:00.530  INFO 1576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : pool-venom - Shutdown initiated...
+2021-08-23 23:55:00.530  INFO 1576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : pool-venom - Shutdown completed.
+2021-08-23 23:55:02.567  INFO 5352 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Starting ZappleFtpServerApplication using Java 16.0.1 on LAPTOP-7UMLR1OT with PID 5352 (C:\workspaces\GitHub\zapple_ftp_server\target\classes started by interfacer in C:\workspaces\GitHub\zapple_ftp_server)
+2021-08-23 23:55:02.567 DEBUG 5352 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-23 23:55:02.567  INFO 5352 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : No active profile set, falling back to default profiles: default
+2021-08-23 23:55:02.608  INFO 5352 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\interfacer\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/C:/Users/interfacer/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+2021-08-23 23:55:02.608  INFO 5352 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-23 23:55:02.608  INFO 5352 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-23 23:55:03.378  INFO 5352 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-23 23:55:03.378  INFO 5352 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-23 23:55:03.378  INFO 5352 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-23 23:55:03.425  INFO 5352 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-23 23:55:03.425  INFO 5352 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 817 ms
+2021-08-23 23:55:03.520  INFO 5352 --- [restartedMain] c.z.z.service.MyFtpServer                : [res/, application.properties] creation was successful
+2021-08-23 23:55:03.567  INFO 5352 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Starting...
+2021-08-23 23:55:03.629  INFO 5352 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : pool-venom - Start completed.
+2021-08-23 23:55:03.629  INFO 5352 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=mediacan-res/, idletime=0, userid=mediacan, userpassword=*6FA2BF9D766BB45BDA8ABDF0078FBBFDA6E8019F}
+2021-08-23 23:55:03.629  INFO 5352 --- [restartedMain] c.z.z.dao.FtpServerUserDAO               : FTP USER LIST : {homedirectory=zapple-res/, idletime=0, userid=zapple, userpassword=*25845A3E67E79CCCD2CBFFEAC037548628958036}
+2021-08-23 23:55:03.629  INFO 5352 --- [restartedMain] c.z.z.service.MyFtpServer                : [] is initialized
+2021-08-23 23:55:03.692  INFO 5352 --- [restartedMain] o.a.ftpserver.impl.DefaultFtpServer      : FTP server started
+2021-08-23 23:55:03.692  INFO 5352 --- [restartedMain] c.z.z.service.MyFtpServer                : ftp started successfully, port number:21
+2021-08-23 23:55:03.943  INFO 5352 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-23 23:55:03.959  INFO 5352 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-23 23:55:03.975  INFO 5352 --- [restartedMain] c.z.z.ZappleFtpServerApplication         : Started ZappleFtpServerApplication in 1.722 seconds (JVM running for 2.267)
