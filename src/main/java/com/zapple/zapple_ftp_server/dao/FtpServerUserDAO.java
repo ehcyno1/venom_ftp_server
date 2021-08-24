@@ -26,7 +26,7 @@ public class FtpServerUserDAO {
             userList.put("homedirectory", rs.getString("homedirectory"));
             userList.put("idletime", rs.getString("idletime"));
 
-            logger.info("FTP USER LIST : {}", userList.toString());
+//            logger.info("FTP USER LIST : {}", userList.toString());
             return userList;
         });
     }
