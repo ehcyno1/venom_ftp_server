@@ -8,40 +8,40 @@ import java.util.List;
 public class EPGData {
     private String EventDataCount;
     private String CHName;
-    private List<EventInfo> EventInfoList;
+    private List<EventInfo> EventInfo;
 
     public EPGData() {}
 
-    public EPGData(String EventDataCount, String CHName, List<EventInfo> EventInfoList) {
+    public EPGData(String EventDataCount, String CHName, List<EventInfo> EventInfo) {
         this.EventDataCount = EventDataCount;
         this.CHName = CHName;
-        this.EventInfoList = EventInfoList;
+        this.EventInfo = EventInfo;
     }
 
-    @XmlElement
     public String getEventDataCount() {
         return EventDataCount;
     }
 
-    public void setEventDataCount(String eventDataCount) {
-        EventDataCount = eventDataCount;
+    @XmlElement(name = "EventDataCount")
+    public void setEventDataCount(String EventDataCount) {
+        this.EventDataCount = EventDataCount;
     }
 
-    @XmlElement
     public String getCHName() {
         return CHName;
     }
 
+    @XmlElement(name = "CHName")
     public void setCHName(String CHName) {
         this.CHName = CHName;
     }
 
-    @XmlElement
     public List<EventInfo> getEventInfoList() {
-        return EventInfoList;
+        return EventInfo;
     }
 
-    public void setEventInfoList(List<EventInfo> eventInfoList) {
-        EventInfoList = eventInfoList;
+    @XmlElement(name = "EventInfo")
+    public void setEventInfoList(List<EventInfo> EventInfo) {
+        this.EventInfo = EventInfo;
     }
 }
