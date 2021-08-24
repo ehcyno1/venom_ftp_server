@@ -38,7 +38,8 @@ public class MyFtplet extends DefaultFtplet {
             JAXBContext jaxbContext = JAXBContext.newInstance(EPGData.class);
             Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
             EPGData epgData = (EPGData) unmarshaller.unmarshal(file);
-            logger.info("EPGData.CHName : {}", epgData.getCHName());
+            logger.info("Channel Name,Count,Size:{},{},{}", epgData.getCHName(),epgData.getEventDataCount(),epgData.getEventInfoList().size());
+
         } catch (JAXBException exception) {
             logger.error(exception.getMessage());
         }

@@ -9,7 +9,6 @@ target/
 *.iws
 *.iml
 *.ipr
-spring.log
-spring.log.*
+spring.
 HELP.md
 .gitignore
